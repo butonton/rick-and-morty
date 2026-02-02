@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- JQery -->
+     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js' integrity='sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==' crossorigin='anonymous'></script>
+</head>
+<body>
+
+        
+
+
+            <div class="navigation">
+
+                <div class="homeBtn navBtn">
+                    <div class="homeBtnPage"><i class="fa-solid fa-house"></i></div>
+                    <p>home</p>
+                </div>
+
+                <div class="charactersBtn navBtn">
+                    <div class="charactersBtnPage"><i class="fa-solid fa-user"></i></div>
+                    <p>characters</p>
+                </div>
+
+            </div>
+
+            <div class="closeZone"></div>
+
+            <div class="popup">
+                
+            </div>
+        
+
+        <div class="wrap">
+
+
+
+        <div class="mainPage">
+            <div class="mainTextConteiner">
+                <h1>Rick and Morty fan page</h1>
+                <p>Explore the world of Rick and Morty series</p>
+            </div>
+
+        </div>
+
+
+
+        <div class="charactersPage">
+            <h1 style="color: #fff;">characters</h1>
+            <div class="filters">
+                <h2>Filters:</h2>
+                <div class="selectGender">
+
+                    <h3>Gender</h3>
+                    <select id="gender">
+                        <option value="">All</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Genderless">Genderless</option>
+                    </select>
+
+                </div>
+
+                <div class="selectStatus">
+
+                    <h3>Status</h3>
+                    <select id="status">
+                        <option value="">All</option>
+                        <option value="Alive">Alive</option>
+                        <option value="Dead">Dead</option>
+                        <option value="unknown">unknown</option>
+                    </select>
+            </div>
+
+            </div>
+            <div class="characterContainer">
+                
+            </div>
+
+            <div class="pagination">
+                <button id="prevPage"><i class="fa-solid fa-left-long"></i></button>
+                <div class="page">1</div>
+                <button id="nextPage"><i class="fa-solid fa-right-long"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
+
+
+<!-- background: linear-gradient
+ (rgba(0, 0, 0, 0.314), rgba(0, 0, 0, 0.314)) 0% 0% / 
+ cover, url("/static/media/background.7be7011305e0393be61b.webp")
+  center center / cover no-repeat; -->
